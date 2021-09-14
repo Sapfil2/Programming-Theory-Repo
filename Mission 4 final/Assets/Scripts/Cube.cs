@@ -15,4 +15,9 @@ public class Cube : Figure
     {
         Debug.Log("Cube toched");
     }
+
+    private void Awake()
+    {
+        setPrice(3);
+    }
 }

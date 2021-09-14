@@ -4,6 +4,18 @@ using UnityEngine;
 
 public abstract class Figure : MonoBehaviour
 {
+    protected int price;
+
+    public int getPrice() 
+    {
+        return price;
+    }
+
+    protected void setPrice(int price)
+    {
+        this.price = price;
+    }
+
     private void OnMouseDown()
     {
         LogTouch();
