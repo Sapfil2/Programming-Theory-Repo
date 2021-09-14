@@ -6,11 +6,13 @@ public class Cube : Figure
 {
     public AudioSource audio;
 
+    // POLYMORPHISM
     public override void HandleTouch()
     {
         audio.Play();
     }
 
+    // POLYMORPHISM
     public override void LogTouch()
     {
         Debug.Log("Cube toched");
@@ -18,6 +20,7 @@ public class Cube : Figure
 
     private void Awake()
     {
+        // INHERITANCE
         setPrice(3);
     }
 }

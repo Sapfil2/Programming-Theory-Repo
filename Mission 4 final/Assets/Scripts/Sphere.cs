@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sphere : Figure
 {
+    // POLYMORPHISM
     public override void HandleTouch()
     {
         float newScaleX = Random.Range(0.5f, 2.0f);
@@ -12,6 +13,7 @@ public class Sphere : Figure
         transform.localScale = new Vector3(newScaleX, newScaleY, newScaleZ);
     }
 
+    // POLYMORPHISM
     public override void LogTouch()
     {
         Debug.Log("Sphere toched");
@@ -19,6 +21,7 @@ public class Sphere : Figure
 
     private void Awake()
     {
+        // INHERITANCE
         setPrice(4);
     }
 }
